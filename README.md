@@ -46,6 +46,7 @@ In each loop:
 3. Ask for the second number.  
 4. Call the correct function.  
 5. Print the result as:
-    ''' 4 + 4 = 8
-10 / 0 = Error (division by zero)'''
+
+    4 + 4 = 8
+    10 / 0 = Error (division by zero)
 
