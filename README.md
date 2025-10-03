@@ -48,5 +48,5 @@ In each loop:
 5. Print the result as:
 ```
     4 + 4 = 8
-    10 / 0 = Error (division by zero)```
+    10 / 0 = Error (division by zero)
 
