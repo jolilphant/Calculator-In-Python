@@ -45,5 +45,7 @@ In each loop:
 2. Ask for the operator (`+`, `-`, `*`, `/`, `//`, `%`, `**`).  
 3. Ask for the second number.  
 4. Call the correct function.  
-5. Print the result as:  
+5. Print the result as:
+    ''' 4 + 4 = 8
+10 / 0 = Error (division by zero)'''
 
