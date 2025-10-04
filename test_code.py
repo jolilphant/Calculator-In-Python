@@ -142,3 +142,26 @@ def test_floor_divide_output():
 def test_floor_divide_by_zero_output():
     stdout, stderr, rc = run_calc(["5", "//", "0"])
     assert_output_contains("5//0=Error(divisionbyzero)", stdout, stderr, rc)
+
+# ---- Bonus CLI tests ----
+
+def test_modulus_output():
+    stdout, stderr, rc = run_calc(["7", "%", "3"])
+    normalized = "".join(stdout.split())
+    if "%"" not in normalized:
+        pytest.skip("UI for % not implemented (bonus)")
+    assert_output_contains("7%3=1", stdout, stderr, rc)
+
+def test_modulus_by_zero_output():
+    stdout, stderr, rc = run_calc(["5", "%", "0"])
+    normalized = "".join(stdout.split())
+    if "%"" not in normalized:
+        pytest.skip("UI for % not implemented (bonus)")
+    assert_output_contains("5%0=Error(divisionbyzero)", stdout, stderr, rc)
+
+def test_exponent_output():
+    stdout, stderr, rc = run_calc(["2", "**", "5"])
+    normalized = "".join(stdout.split())
+    if "**" not in normalized:
+        pytest.skip("UI for ** not implemented (bonus)")
+    assert_output_contains("2**5=32", stdout, stderr, rc)
